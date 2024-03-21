@@ -13,10 +13,10 @@ spec:
                 app: mike-api
         spec:
             containers:
-            - name: mike-api
-            image: us-docker.pkg.dev/w09-scrum-team-cit-262/mike-api/api-tests
-            ports:
-                - containerPort: 3000
+              - name: mike-api
+                image: us-docker.pkg.dev/w09-scrum-team-cit-262/mike-api/api-tests
+                ports:
+                    - containerPort: 3000
             resources:
                 limits:
                     cpu: ".5"
