@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mike-api
+  name: frank-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mike-api
+      app: frank-api
   template:
     metadata:
       labels:
-        app: mike-api
+        app: frank-api
     spec:
       containers:
-        - name: mike-api
-          image: us-docker.pkg.dev/w09-scrum-team-cit-262/mike-api/api-tests
+        - name: frank-api
+          image: us-central1-docker.pkg.dev/cit262-416322/frank-api/api-test
           ports:
           - containerPort: 3000
           resources:

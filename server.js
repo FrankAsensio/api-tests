@@ -7,8 +7,8 @@ app.get("/", (req, res)=>{
     res.send("Welcome to my app")
 });
 
-app.get('/mike', (req,res) => {
-    res.send("Hello Mike")
+app.get('/frank', (req,res) => {
+    res.send("Hello frank")
 });
 
 app.listen(port, ()=>console.log("Listening"));
